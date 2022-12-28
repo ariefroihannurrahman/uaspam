@@ -31,7 +31,7 @@
         />
 
     <Spinner
-        android:id="@+id/list_city"
+        android:id="@+id/kota"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="50dp"
@@ -44,16 +44,16 @@
         />
 
     <TextView
-        android:id="@+id/yourname"
+        android:id="@+id/nama"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/yourname"
+        android:text="@string/nama"
         android:fontFamily="sans-serif"
         android:textStyle="bold"
         android:layout_marginLeft="50dp"
         android:textColor="#733F0E"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/list_city"
+        app:layout_constraintTop_toBottomOf="@id/kota"
         android:textSize="20sp"
         android:layout_marginTop="60dp"/>
 
@@ -61,9 +61,9 @@
         android:id="@+id/name"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:hint="Enter your name"
-        app:layout_constraintStart_toStartOf="@id/yourname"
-        app:layout_constraintTop_toBottomOf="@id/yourname"
+        android:hint="@string/enter_your_name"
+        app:layout_constraintStart_toStartOf="@id/nama"
+        app:layout_constraintTop_toBottomOf="@id/nama"
         android:layout_marginTop="5dp"/>
 
     <Button
@@ -74,10 +74,7 @@
         android:backgroundTint="#D52F2F"
         app:layout_constraintStart_toStartOf="@id/name"
         app:layout_constraintTop_toBottomOf="@id/name"
-        android:layout_marginTop="20dp"/>
-
-
-
-
+        android:layout_marginTop="20dp"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

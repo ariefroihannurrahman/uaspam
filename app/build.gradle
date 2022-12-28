@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace 'lat.pam.utsrestaurant'
+    namespace 'lat.pam.uaspam'
     compileSdk 32
 
     defaultConfig {
-        applicationId "lat.pam.utsrestaurant"
+        applicationId "lat.pam.uaspam"
         minSdk 21
         targetSdk 32
         versionCode 1

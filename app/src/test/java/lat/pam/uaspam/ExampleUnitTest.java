@@ -1,4 +1,4 @@
-package lat.pam.utsrestaurant;
+package lat.pam.uaspam;
 
 import org.junit.Test;
 

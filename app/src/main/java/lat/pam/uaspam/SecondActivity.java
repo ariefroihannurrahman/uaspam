@@ -1,4 +1,4 @@
-package lat.pam.utsrestaurant;
+package lat.pam.uaspam;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -12,14 +12,14 @@ public class SecondActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_second_activity);
+        setContentView(R.layout.activity_second);
 
         Button btnMove = findViewById(R.id.button_menu);
 
         btnMove.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(SecondActivity.this, ListMenu.class));
+                startActivity(new Intent(SecondActivity.this, List.class));
             }
         });
     }

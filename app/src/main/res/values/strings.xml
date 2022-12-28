@@ -1,14 +1,14 @@
 <resources>
-    <string name="app_name">Restaurant</string>
+    <string name="app_name">UASPAM</string>
     <string name="Store">Store</string>
     <string-array name="city">
         <item>Cihampelas</item>
         <item>Cibiru</item>
     </string-array>
-    <string name="yourname">Your Name</string>
+    <string name="nama">Your Name</string>
     <string name="name">Enter your name</string>
     <string name="submit">Submit</string>
-    <string name="seeMenu">See Menus</string>
+    <string name="lihat_menu">See Menus</string>
     <string name="pepperoni_pizza">Pepperoni Pizza</string>
     <string name="spaghetti">Spaghetti</string>
     <string name="burger">Burger</string>
@@ -17,7 +17,23 @@
     <string name="spaghetti_detail">Cocok Bagi anda yang ingin merasakan spaghetti original dengan bumbu yang oriental</string>
     <string name="burger_detail">Cocok bagi anda yang ingin merasakan kelembutan burger berlapisan keju, sayuran, dan daging yang tebal</string>
     <string name="steak_detail">Cocok bagi anda yang ingin merasakan lezatnya daging steak dipadukan dengan kentang yang lezat</string>
-    <string name="pepperoni_pizza_description">Pepperoni pizza adalah pizza yang memiliki topping daging pepperoni sapi asli. Di Italia, pepperoni disebut salame piccante (salami panas). Biasa menjadi bahan baku pizza di Amerika Serikat, yang sering mewakili 30% pelengkap. Pizza ini cocok untuk santap siang ataupun malam anda</string>
+    <string name="deskripsi_pizza">Pepperoni pizza adalah pizza yang memiliki topping daging pepperoni sapi asli. Di Italia, pepperoni disebut salame piccante (salami panas). Biasa menjadi bahan baku pizza di Amerika Serikat, yang sering mewakili 30% pelengkap. Pizza ini cocok untuk santap siang ataupun malam anda</string>
     <string name="order_done">Terima kasih Pa Asep sudah memesan di toko kami, pesanan Pepperoni Pizza anda dikirim menggunakan Fast Delivery</string>
+    <string name="enter_your_name">Enter your name</string>
+    <string name="harga">Price : Rp 66.000,00</string>
+    <string name="pesan">Order Now</string>
+    <string name="kembali">Back</string>
+    <string name="welcome">Hello, Asep</string>
+    <string name="order">Order Detail</string>
+    <string name="asep">Asep</string>
+    <string name="cihampelas_store">Store : Cihampelas</string>
+    <string name="pepperoni_pizza_text">Pepperoni Pizza</string>
+    <string name="pengiriman">Pengiriman</string>
+    <string name="ambil_sendiri">Ambil Sendiri</string>
+    <string name="fast_delivery">Fast Delivery (minimal 30 menit sampai)</string>
+    <string name="done">Done</string>
+    <string name="cihampelas">Cihampelas</string>
+    <string name="location">Location</string>
+    <string name="find_on_maps">Find on Maps</string>
 
 </resources>

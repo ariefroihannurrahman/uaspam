@@ -1,6 +1,6 @@
-package lat.pam.utsrestaurant;
+package lat.pam.uaspam;
 
-public class Global {
+public class BaseURL {
     // base url u can change anytime
     public static String base_url="https://retoolapi.dev/StWODX/uasresto";
 }

@@ -15,21 +15,21 @@
         android:theme="@style/Theme.Utsrestaurant"
         tools:targetApi="31">
         <activity
-            android:name=".OrderDetail"
+            android:name=".Order"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".DetailMenu"
+            android:name=".Detail"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".ListMenu"
+            android:name=".List"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
