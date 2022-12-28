@@ -14,9 +14,9 @@ public class SecondActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
 
-        Button btnMove = findViewById(R.id.button_menu);
+        Button menu = findViewById(R.id.button_menu);
 
-        btnMove.setOnClickListener(new View.OnClickListener() {
+        menu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(SecondActivity.this, List.class));

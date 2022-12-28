@@ -22,23 +22,23 @@ import org.json.JSONException;
 
 public class List extends AppCompatActivity {
 
-    TextView pizza, spaghetti, burger, steak, frenchFries;
-    TextView pizzaDetail, spaghettiDetail, burgerDetail, steakDetail, frenchFriesDetail;
+    TextView pizza, spageti, burger, steak, kentangGoreng;
+    TextView pDetail, spDetail, bDetail, stDetail, kgDetail;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list);
 
         pizza = findViewById(R.id.pepperoni_pizza);
-        pizzaDetail = findViewById(R.id.pizza_detail);
-        spaghetti = findViewById(R.id.spaghetti);
-        spaghettiDetail = findViewById(R.id.spaghetti_detail);
+        pDetail = findViewById(R.id.pizza_detail);
+        spageti = findViewById(R.id.spaghetti);
+        spDetail = findViewById(R.id.spaghetti_detail);
         burger = findViewById(R.id.burger);
-        burgerDetail = findViewById(R.id.burger_detail);
+        bDetail = findViewById(R.id.burger_detail);
         steak = findViewById(R.id.steak);
-        steakDetail = findViewById(R.id.steak_detail);
-        frenchFries = findViewById(R.id.kentang_goreng);
-        frenchFriesDetail = findViewById(R.id.kentang_goreng_detail);
+        stDetail = findViewById(R.id.steak_detail);
+        kentangGoreng = findViewById(R.id.kentang_goreng);
+        kgDetail = findViewById(R.id.kentang_goreng_detail);
 
 
         callServer();
@@ -47,7 +47,8 @@ public class List extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(List.this, Detail.class));
+                startActivity(new Intent(List.this, Detail.class)
+                );
             }
         });
 
@@ -64,30 +65,20 @@ public class List extends AppCompatActivity {
 
                     JSONArray jsonArray = new JSONArray(response);
 
-                    String pizzaName = jsonArray.getJSONObject(0).getString("foodName");
-                    pizza.setText(pizzaName);
-                    String pizzaDetails = jsonArray.getJSONObject(0).getString("details");
-                    pizzaDetail.setText(pizzaDetails);
-
-                    String spaghettiName = jsonArray.getJSONObject(1).getString("foodName");
-                    spaghetti.setText(spaghettiName);
-                    String spaghettiDetails = jsonArray.getJSONObject(1).getString("details");
-                    spaghettiDetail.setText(spaghettiDetails);
-
-                    String burgerName = jsonArray.getJSONObject(2).getString("foodName");
-                    burger.setText(burgerName);
-                    String burgerDetails = jsonArray.getJSONObject(2).getString("details");
-                    burgerDetail.setText(burgerDetails);
-
-                    String steakName = jsonArray.getJSONObject(3).getString("foodName");
-                    steak.setText(steakName);
-                    String steakDetails = jsonArray.getJSONObject(3).getString("details");
-                    steakDetail.setText(steakDetails);
-
-                    String frenchFriesName = jsonArray.getJSONObject(4).getString("foodName");
-                    frenchFries.setText(frenchFriesName);
-                    String frenchFriesDetails = jsonArray.getJSONObject(4).getString("details");
-                    frenchFriesDetail.setText(frenchFriesDetails);
+                    for(int index = 0; index < jsonArray.length(); index++){
+                        String pizzaName = jsonArray.getJSONObject(index).getString("foodName");
+                        if(index == 0){pizza.setText(pizzaName);}
+                        else if(index == 1){spageti.setText(pizzaName);}
+                        else if(index == 2){burger.setText(pizzaName);}
+                        else if(index == 3){steak.setText(pizzaName);}
+                        else if(index == 4){kentangGoreng.setText(pizzaName);}
+                        String pizzaDetails = jsonArray.getJSONObject(index).getString("details");
+                        if(index == 0){pDetail.setText(pizzaDetails);}
+                        else if(index == 1){spDetail.setText(pizzaDetails);}
+                        else if(index == 2){bDetail.setText(pizzaDetails);}
+                        else if(index == 3){stDetail.setText(pizzaDetails);}
+                        else if(index == 4){kgDetail.setText(pizzaDetails);}
+                    }
                 }
                 catch (JSONException e) {
                     e.printStackTrace();
